@@ -1,0 +1,33 @@
+.a{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.fa-heart{
+    padding: 40px;
+}
+table{
+    background-color:antiquewhite;
+    border-radius: 10px;
+    width:80%;
+    padding: 40px;
+
+}
+td{
+    border-bottom: 1px solid rgb(241, 198, 116);
+}
+th{
+    border-bottom: 1px solid rgb(241, 198, 116);
+}
+i:hover{
+    color: brown;
+}
+input{
+border-radius: 5px;
+width: 70px;
+border: 1px solid rgb(231, 153, 7);
+} 
+
+
+i{
+    cursor: pointer;
+}
