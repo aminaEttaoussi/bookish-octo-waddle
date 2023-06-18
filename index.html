@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="a">
+        <table>
+            <tr>
+                <td><h1>Shopping Bag</h1></td>
+                <td>Product</td>
+                <td>Quntity</td>
+                <td>Unit Price</td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <td ><i class="fa-regular fa-heart"></i><i class="fa-solid fa-trash-can"></i></td>
+                <td ><img src="images/montre5.jpg" alt="" style="width: 100px;padding-top: 8px;"> <h5>montre Luxe</h5></td>
+                <td ><input type="number" placeholder="Quntity" id="NUM1" min="0" max="5" onclick="c()"></td>
+                <td id="1"><h5>5$</h5></td>
+                <td id="2"><h5>0$</h5></td>
+            </tr>
+            <tr>
+                <td><dr><i class="fa-regular fa-heart"></i></dr><dr><i class="fa-solid fa-trash-can"></i></dr></td>
+                <td ><img src="images/montre3.jpg" alt="" style="width: 100px;padding-top: 8px;"> <h5>montre Luxe</h5></td>
+                <td><input type="number" placeholder="Quntity" id="NUM2" min="0" max="5" onclick="c()"></td>
+                <td id="3"><h5>19$</h5></td>
+                <td id="4"><h5>0$</h5></td>
+            </tr>
+            <tr>
+                <td><dr><i class="fa-regular fa-heart"></i></dr><dr><i class="fa-solid fa-trash-can"></i></dr></td>
+                <td ><img src="images/montre2.jpg" alt="" style="width: 100px;padding-top: 8px;"><h5>montre Luxe</h5></td>
+                <td><input type="number"placeholder="Quntity" id="NUM3" min="0" max="5" onclick="c()"></td>
+                <td id="5"><h5>7$</h5></td>
+                <td id="6"><h5>0$</h5></td>
+            </tr>
+            <tr><td><h4>Total Price</h4> </td> <td style="padding-left: 0px;" ><p id="total">0</p></td></tr>
+            
+        </table>
+        <script>
+            //var t=document.getElementById("total").value;
+            var t=0;
+            function c() {
+            
+                var a=document.getElementById("NUM1").value;
+                var a2=document.getElementById("NUM2").value;
+                var a3=document.getElementById("NUM3").value;
+                
+                if(a>0){
+                    document.getElementById("2").innerHTML=(a*5)+" "+"$";
+                    t+=parseInt(a*5);
+                    
+                }
+                if(a2>0){
+                    document.getElementById("4").innerHTML=(a2*19)+" "+"$";
+                    t+=parseInt(a2*19);
+                } 
+                if(a3>0){
+                    document.getElementById("6").innerHTML=(a3*7)+" "+"$";
+                    t+=parseInt(a3*7);
+                }
+                document.getElementById("total").innerHTML=parseInt(t);
+
+
+            }
+            // function c1() {
+            //     var a2=document.getElementById("NUM2").value;
+            //     if(a2>0){
+            //         document.getElementById("4").innerHTML=(a2*19)+" "+"$";
+            //         t+=parseInt(a2*19);
+            //     } 
+            // }
+            // function c2() {
+            //     var a3=document.getElementById("NUM3").value;
+            //     if(a3>0){
+            //         document.getElementById("6").innerHTML=(a3*7)+" "+"$";
+            //         t+=parseInt(a3*7);
+            //     }
+
+            // }
+            // document.getElementById("total").innerHTML=parseInt(t);
+            //var t1= document.getElementById("2").value;
+           // var t2= document.getElementById("4").value;
+            //var t3= document.getElementById("6").value;
+           
+            
+
+        </script>
+    </div>
+    
+</body>
+</html>
